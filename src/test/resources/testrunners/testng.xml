@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Test" thread-count = "3" parallel ="tests" verbose ="3" >
+
+	<test name="Google Test">
+	
+		<parameter name="browser" value="chrome"/>
+		<parameter name="url" value="https://www.google.com"/>
+		
+		<classes>
+			<class name="AppTest.GoogleTest" />
+		</classes>
+	</test>
+
+
+	<test name="Open Cart Test">
+	
+		<parameter name="browser" value="chrome"/>
+		<parameter name="url" value="https://demo.opencart.com/index.php?route=account/login,language=en-gb"/>
+		
+		<classes>
+			<class name="AppTest.OpenCartTest" />
+		</classes>
+	</test>
+
+	<test name="Orange Hrm Test">
+	
+		<parameter name="browser" value="chrome"/>
+		<parameter name="url" value="https://www.orangehrm.com/orangehrm-30-day-trial/?"/>
+		
+		<classes>
+			<class name="AppTest.OrangeHrmTest" />
+		</classes>
+	</test>
+
+	
+
+</suite>
+
+
+
